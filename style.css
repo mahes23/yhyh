@@ -1,0 +1,718 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-padding: 5rem;
+}
+
+header{
+    background-color:whitesmoke;
+    height: 10vh;
+    font-size: 18px;
+    color: black;
+    position: sticky;
+    top: 0;
+    
+}
+.head{
+    display: flex;
+    padding:20px;
+    
+}
+body{
+    overflow-x: hidden;
+    background-color: white;
+    width: 100%;
+    background: fixed;
+}
+.head h1{
+    text-transform: uppercase;
+    width: 500px;
+    margin-left: 4%;
+
+}
+.head a{
+    margin-left: 4%;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+}
+.head a:hover{
+    color:red;
+}
+.search {
+    margin-left: 5%;
+    position: relative;
+    width: 200px;
+    cursor: text;
+    
+}
+.search input {
+    position: absolute;
+   text-transform: capitalize;
+   border-radius: 20px;
+   border-color:2px solid gray;
+   width: 150px;
+   height:4vh;
+   
+}
+.search i{
+    position: absolute;
+    left: 60%;
+    top: 3px; 
+}
+.search:hover input{
+    background-color:bisque;
+}
+.social-links{
+    width:150px;
+   margin-left:2%;
+}
+.social-links i{
+margin-left: 5%;
+}
+/*....//////blogshop.....///*/
+.blogshop{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+   
+}
+.blog{
+background-color:black;
+width: 100%;
+}
+.blog img{
+   height: 100vh;
+   width: 100%;
+}
+/*carousel using*/
+.shoping{
+  width:100%;
+  background-color: yellow;
+  overflow: hidden;
+}
+.slide{
+    width: 400%;
+    display: flex;
+    height: 100vh;
+}
+.slide img{
+    width: 30%;
+    height: 100vh;
+    transition: all 0.15s ease;
+}
+.slide input{
+    display: none;
+}
+.dot{
+    display: flex;
+    margin:2px;
+    justify-content: center;
+    align-items: center;
+    top: 90%;
+    margin-left: 25%;
+    position:absolute;
+}
+.dot label{
+    width:10px;
+    height: 10px;
+    border-radius: 10%;
+    border: 2px solid black;
+    transition: all 0.15s ease;
+    margin: 5px;
+    background-color:white;
+}
+.dot label:hover {
+    background-color: aqua;
+}
+#img1:checked~.m1{
+    margin-left: 0;
+}
+#img2:checked~.m2{
+    margin-left:-30%;
+}
+#img3:checked~.m3{
+    margin-left: -60%;
+}
+#img4:checked~.m4{
+    margin-left: -120%;
+}
+/*///////section card///////*/
+.card{
+    width: 100%;
+    height: 100vh;
+   
+}
+.card h1{
+    margin-left: 45%;
+    text-transform:capitalize;
+    font-size: 30px;
+    padding-top: 3%;
+}
+.card-items{
+    display: flex;
+    margin-top: 2%;
+    width: 100%;
+    justify-content: space-around;
+}
+.card-items1{
+  
+    width: 25%;
+    height: 70vh;
+    border-radius:10px;
+    box-shadow: 1px 1px 1px 1px black;
+}
+.card-items1 img{
+    width: 100%;
+}
+.card-items1 p{
+text-transform: capitalize;
+margin-left: 3%;
+
+}
+.card-items1 h2{
+    margin-left: 3%;
+    margin-top: 3%;
+    text-transform: capitalize;
+    width: 90%;
+    height: 8vh;
+}
+.card-items1 hr{
+    margin-top: 15%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.social-links1{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.card button{
+ margin-top: 3%;
+ text-align: center;
+ width: 100px;
+ height: 30px;
+ text-transform: capitalize;
+ margin-left: 47%;
+}
+/*shop section*/
+.shop{
+    width: 100%;
+    height: 100vh;
+   
+}
+.shop h1{
+    margin-top: 10%;
+    text-align: center;
+    text-transform: capitalize;
+}
+.shop-items{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-around;
+   
+}
+.shop-items1 h2{
+    text-align: center;
+}
+.shop button{
+margin-top: 10%;
+margin-left: 45%;
+width: 15%;
+height: 5vh;
+text-transform: capitalize;
+}
+.shop button:hover{
+    background-color:black;
+   }
+/*...bellaooo...*/
+.bello{
+    width: 100%;
+    height: 100vh;
+    /*background-color: aqua;*/
+}
+.bellodiv{
+    display: flex;
+}
+.blogdiv1{
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 10%;
+    text-transform: capitalize;
+}
+.blogdiv1 p{
+    width: 300px;
+   margin-left: 30%;
+}
+.blogdiv1 button{
+    margin-top: 3%;
+    width: 100px;
+    text-transform: capitalize;
+}
+.blogdiv1 button:hover{
+    background-color: black;
+    color: white;
+}
+.blogdiv2{
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 10%;
+    text-transform: capitalize;
+}
+.blogdiv2 img{
+    width: 90%;
+}
+/*.....follow me....*/
+.followme{
+    margin-top: 5%;
+    text-transform: capitalize;
+    text-align: center;
+    font-size:25px;
+}
+.rightside{
+    margin-top: 3%;
+}
+.rightside img{
+    width: 20%;
+    height: 40%;
+}
+.leftside img{
+    width: 20%;
+    height: 40%;
+}
+.leftside{
+    margin-top: 3%;
+}
+/*....footter.....*/
+.footmain{
+    margin-top: 4%;
+    width: 100%;
+   
+   
+}
+.twosidefoot{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+   
+}
+.rightfoot{
+   width: 50%;
+   padding-left: 15%;
+   padding-top: 5%;
+}
+.mail{
+    margin-top: 5%;
+    width: 80%;
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height:50px;
+}
+.mail button{
+    width: 20%;
+    height: 30px;
+
+}
+.mail button:hover{
+    background-color:black;
+}
+.mail input{
+    width:50%;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid gray;
+}
+.mail:hover input{
+border-bottom: 3px solid pink;
+transition: 0s;
+}
+.leftfoot{
+    width: 50%;
+   padding-left: 15%;
+   padding-top: 5%;
+   font-size: 25px;
+   text-transform: capitalize;
+   line-height: 60px;
+}
+.form{
+ display: flex; 
+ justify-content: space-between;  
+ width: 85%;
+}
+.form input{
+    width:100%;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid gray;
+}
+button{
+    width: 20%;
+    height: 5%;
+    text-transform: capitalize;
+}
+.msg{
+    width:70%;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid gray;
+}
+button:hover{
+    background-color: black;
+    color: #fff;
+}
+
+/*.......css responsive 600px....*/
+@media (min-width:460px) and (max-width:575px){
+    .head{
+        display: flex;
+        padding:20px;
+        
+    }
+    body{
+       
+        background-color: white;
+        width: 100%;
+        background: fixed;
+    }
+    .head h1{
+        margin-top: 1rem;
+        text-transform: uppercase;
+        width: 100px;
+        font-size: 20px;
+        margin: auto;
+    }
+    .head a{
+        margin-left: 1%;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: black;
+    }
+    .search {
+        margin-left: 2%;
+       width: 20px;
+    } 
+    .search input {
+    width: 70px;
+       height:4vh;
+    }
+    .search i{
+        position: absolute;
+        left: 3rem;
+        
+    }
+    .social-links{
+        width:170px;
+       margin-left:2rem;
+    }
+    .blogshop{
+        width: 100%;
+        height: 100vh;
+        display:block;
+    }
+    .card{
+        width: 100%;
+        height: 100vh;
+        margin-top: 110%;
+    }
+    .card-items{
+        display:block;
+        width: 100%;
+        height: 100vh;
+       margin-left: 20%;
+       margin-top: 2%;
+    }
+    .card-items1{
+        background-color: aliceblue;
+         width: 60%;
+         height: 75vh;
+         }
+    .card h1{
+        margin-left:30%;
+    }
+    .card button{
+        margin-top: 139%;
+        margin-left: 38%;
+    }
+    .shop{
+        width: 100%;
+        height: 100vh;
+        margin-top: 160%;
+    }
+    .shop-items{
+        padding-top: 10%;
+    }
+    .shop-items1  img{
+        width: 80%;
+    }
+    .shop-items1 h2{
+      font-size: 18px;
+      width: 100px;
+    }
+    
+    .bellodiv{
+        display:block;
+        width: 100%;
+        height: 100vh;
+    }
+    .blogdiv1{
+        width: 100%;
+        height: 100vh;
+        padding-top: 1%;
+    }
+    .blogdiv1 p{
+        width: 300px;
+       margin-left: 20%;
+    }
+    .blogdiv2{
+        width: 100%;
+        height: 100vh;
+        padding-top: 1%;
+    }
+    .followme{
+        margin-top: 115%;
+        width: 100%;
+        height: 100vh;
+    }
+    .twoside{
+        width: 90%;
+        height: 100vh;
+        padding-top: 10%;
+    }
+    .rightside{
+        width: 100%;
+        height: 18rem;
+    }
+    .rightside img{
+        width: 10rem;
+    }
+    .leftside{
+        width: 100%;
+        height: 17rem;
+    }
+    .leftside img{
+        width: 10rem;
+    }
+    .twosidefoot{
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
+    .rightfoot{
+        width: 100%;
+     }
+     .mail{
+        margin-top: 5%;
+        width: 90%;
+        font-size: 17px;
+        text-transform: capitalize;
+        line-height:50px;
+    }
+    .leftfoot{
+        width: 100%;
+     }
+     .dot{
+        padding-top: 115%;
+        left: 20%;
+       
+     }
+     html{
+        scroll-padding: 1rem;
+       
+     }
+     
+}
+@media only screen and (min-width:330px) and (max-width:415px)
+{
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        position: sticky;
+        top: 0;
+        width: 100%;
+        
+      }  .head{
+        display: flex;
+        padding:20px;
+        
+    }
+    .head h1{
+        text-transform: uppercase;
+        width:  70px;
+        margin-left:0.3rem;
+        font-size: 18px;
+        margin-left: 1%;
+    }
+    .head a{
+        margin-left:1%;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+    }
+    
+    .search {
+        margin-left: 1%;
+       width: 20px;
+    } 
+    .search input {
+    width: 50px;
+       height:4vh;
+    }
+    .search i{
+        position: absolute;
+        left:2rem;
+        
+    }
+    .social-links{
+        width:80px;
+       margin-left:3%;
+    }
+    .blogshop{
+        width: 100%;
+        height: 100vh;
+        display:block;
+    }
+    .card{
+        width: 100%;
+        height: 100vh;
+        margin-top: 210%;
+    }
+    .card-items{
+        display:block;
+        width: 100%;
+        height: 100vh;
+       margin-left: 20%;
+       margin-top: 5%;
+    }
+    .card-items1{
+        background-color: aliceblue;
+         width: 60%;
+         height: 50vh;
+         }
+    .card h1{
+        margin-left:20%;
+    }
+    .card button{
+        margin-top: 120%;
+        margin-left: 35%;
+    }
+    .shop{
+        width: 100%;
+        height: 100vh;
+        margin-top: 180%;
+        
+    }
+    .shop-items{
+        padding-top: 10%;
+        display: block;
+        text-align: center;
+    }
+    .shop-items1  img{
+        width: 50%;
+    }
+    .shop-items1 h2{
+      font-size: 18px;
+      width: 150px;
+      margin-left: 30%;
+    }
+    .shop button{
+        text-align: center;
+        margin-top: 240%;
+    }
+    .bello{
+        margin-top: 170%;
+    }
+    .bellodiv{
+        display:block;
+        width: 100%;
+        height: 100vh;
+    }
+    .blogdiv1{
+        width: 100%;
+        height: 100vh;
+        padding-top: 1%;
+    }
+    .blogdiv1 p{
+        width: 300px;
+       margin-left: 10%;
+    }
+    .blogdiv2{
+        width: 100%;
+        height: 100vh;
+        padding-top: 1%;
+    }
+    .followme{
+        margin-top: 130%;
+        width: 100%;
+        height: 100vh;
+       
+    }
+    .twoside{
+        width: 90%;
+        height: 100vh;
+        padding-top: 5%;
+    }
+    .rightside{
+        width: 90%;
+        height: 40vh;
+    }
+    .rightside img{
+        height: 20%;
+        width: 50%;
+    }
+    .leftside{
+        width: 90%;
+        height: 50vh;
+    }
+    .leftside img{
+        height: 20%;
+        width: 50%;
+    }
+    .twoside{
+        width: 90%;
+        height: 100vh;
+        padding-top: 10%;
+    }
+    .footmain{
+        margin-top: 15%;
+    }
+    .twosidefoot{
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
+    .rightfoot{
+        width: 100%;
+     }
+     .mail{
+        margin-top: 5%;
+        width: 90%;
+        font-size: 15px;
+        text-transform: capitalize;
+        line-height:50px;
+    }
+    .leftfoot{
+        width: 100%;
+     }
+     .dot{
+        padding-top:210%;
+        left: 20%;
+       
+     }
+     html{
+        scroll-padding: 2.5rem;
+       
+     }
+     
+}
